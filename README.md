@@ -20,6 +20,8 @@ docker run -p 8080:8080 spring-boot-docker-jib:0.0.1-SNAPSHOT
 | GET    | `/api/greetings/{id}`        | Get greeting by id       |
 | POST   | `/api/greetings`             | Create `{"message":"…"}` |
 | DELETE | `/api/greetings/{id}`        | Delete greeting          |
+| POST   | `/api/greetings-stream`      | Batch create `[{"message":"…"}]`; streams NDJSON |
+| POST   | `/api/greetings-async`       | Create `{"message":"…"}` asynchronously |
 | GET    | `/actuator/health`           | Health check             |
 
 CI: `.github/workflows/build.yml` runs `mvn verify` on every push/PR to `main`.
