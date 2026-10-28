@@ -1,0 +1,14 @@
+target/
+.idea/
+*.iml
+*.log
+.DS_Store
+
+*.class
+.history
+.cache
+.lib/
+
+# IntelliJ project files
+out
+gen
